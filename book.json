@@ -1,0 +1,61 @@
+{
+    "author": "wangcq01 <wangcq01@mingyuanyun.com>",
+    "description": "面向地产客户提供一站式低代码小程序搭建平台。",
+    "extension": null,
+    "generator": "site",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "小程序PaaS": "http://minapp.mypaas.com.cn"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "plugins": [
+        "fontsettings",
+        "lunr",
+        "search",
+        "sharing",
+        "highlight",
+        "livereload",
+        "intopic-toc",
+        "lightbox"
+    ],
+    "pluginsConfig": {
+        "intopic-toc": {
+            "label": "本章目录",
+            "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6",
+            "mode": "nested",
+            "maxDepth": 6,
+            "isCollapsed": false,
+            "isScrollspyActive": true,
+            "visible": true
+        },
+        "lightbox": {
+            "options": {
+              "resizeDuration": 100,
+              "wrapAround": true
+            }
+        }
+    },
+    "title": "文档中心 | 小程序PaaS",
+    "variables": {}
+}

@@ -1,0 +1,461 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>首次接入流程 · 文档中心 | 小程序PaaS</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="wangcq01 <wangcq01@mingyuanyun.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="更新组件.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://minapp.mypaas.com.cn" target="_blank" class="custom-link">小程序PaaS</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    接入指南（嵌入式方案）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="接入流程.html">
+            
+                <a href="接入流程.html">
+            
+                    
+                    首次接入流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="更新组件.html">
+            
+                <a href="更新组件.html">
+            
+                    
+                    更新组件流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../平台应用API/">
+            
+                <a href="../平台应用API/">
+            
+                    
+                    openApi接口文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >首次接入流程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9996;&#x6B21;&#x63A5;&#x5165;&#x6D41;&#x7A0B;">&#x9996;&#x6B21;&#x63A5;&#x5165;&#x6D41;&#x7A0B;</h1>
+<blockquote>
+<p>&#x7248;&#x672C;&#xFF1A;1.0
+&#x65F6;&#x95F4;&#xFF1A;2020-12-21
+&#x521B;&#x5EFA;&#x8005;&#xFF1A;wangcq01</p>
+</blockquote>
+<h2 id="&#x4E00;&#x3001;&#x5E73;&#x53F0;&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x5165;&#x6D41;&#x7A0B;">&#x4E00;&#x3001;&#x5E73;&#x53F0;&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x5165;&#x6D41;&#x7A0B;</h2>
+<p>&#x7528;&#x4E8E;SaaS&#x5E73;&#x53F0;&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x5165;&#x5C0F;&#x7A0B;&#x5E8F;PaaS&#xFF0C;&#x4E3B;&#x8981;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;
+<a href="&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x5165;&#x6D41;&#x7A0B;.png" data-lightbox="31ee93f8-1902-491e-888c-86d9710c1fec" data-title="&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x5165;&#x6D41;&#x7A0B;"><img src="&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x5165;&#x6D41;&#x7A0B;.png" alt="&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x5165;&#x6D41;&#x7A0B;"></a></p>
+<h2 id="&#x4E8C;&#x3001;&#x63A5;&#x5165;&#x6D41;&#x7A0B;&#x8BF4;&#x660E;">&#x4E8C;&#x3001;&#x63A5;&#x5165;&#x6D41;&#x7A0B;&#x8BF4;&#x660E;</h2>
+<h3 id="0-&#x5F00;&#x901A;&#x8D26;&#x53F7;">0 &#x5F00;&#x901A;&#x8D26;&#x53F7;</h3>
+<p>&#x8BF7;&#x8054;&#x7CFB;&#x5C0F;&#x7A0B;&#x5E8F;PaaS&#x5E73;&#x53F0;PO&#x5F00;&#x901A;&#x201C;&#x5F00;&#x53D1;&#x8005;&#x63A7;&#x5236;&#x53F0;&#x201D;&#x8D26;&#x6237;&#x3002;</p>
+<h3 id="1-&#x521D;&#x59CB;&#x5316;&#x5E94;&#x7528;">1 &#x521D;&#x59CB;&#x5316;&#x5E94;&#x7528;</h3>
+<p>&#x5728;SaaS&#x7CFB;&#x7EDF;&#x63A5;&#x5165;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;PaaS&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x3002;</p>
+<p>&#x5FC5;&#x987B;&#x7684;&#x6B65;&#x9AA4;&#x4E3A;&#xFF1A;&#x201C;&#x767B;&#x5F55;&#x8D26;&#x6237;&#x201D;-&gt;&#x201C;&#x521B;&#x5EFA;&#x5E94;&#x7528;&quot;-&gt;&quot;&#x53D1;&#x5E03;&#x5E94;&#x7528;&quot;&#x3002;</p>
+<p>&#x53EF;&#x9009;&#x7684;&#x6B65;&#x9AA4;&#x4E3A;&#xFF1A;&#x201C;&#x914D;&#x7F6E;&#x8D44;&#x6E90;&#x548C;&#x73AF;&#x5883;&#x201D;&#x3001;&#x201C;&#x5F15;&#x7528;&#x8D44;&#x6E90;&#x548C;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x201D;&#xFF0C;&#x7528;&#x4E8E;&#x8D44;&#x6E90;&#x79C1;&#x6709;&#x5316;&#x3001;&#x5F15;&#x7528;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x548C;&#x5339;&#x914D;SaaS&#x7814;&#x53D1;&#x73AF;&#x5883;&#x3002;</p>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;
+<a href="app.png" data-lightbox="f97c2541-ae43-47f7-a52e-5b8f2defb079" data-title="app"><img src="app.png" alt="app"></a></p>
+<p>&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<h4 id="11&#x767B;&#x5F55;&#x8D26;&#x6237;">1.1&#x767B;&#x5F55;&#x8D26;&#x6237;</h4>
+<p>&#x4F7F;&#x7528;&#x5C0F;&#x7A0B;&#x5E8F;PaaS&#x63D0;&#x4F9B;&#x7684;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x767B;&#x5F55;&#x5F00;&#x53D1;&#x8005;&#x63A7;&#x5236;&#x53F0;&#xFF08;<a href="https://minapp.mypaas.com.cn&#xFF09;&#xFF1A;" target="_blank">https://minapp.mypaas.com.cn&#xFF09;&#xFF1A;</a>
+<a href="login.png" data-lightbox="40bb7ef6-3c92-4d1d-8539-12198ce5bfb3" data-title="login"><img src="login.png" alt="login"></a></p>
+<h4 id="12-&#x914D;&#x7F6E;&#x8D44;&#x6E90;&#x548C;&#x73AF;&#x5883;">1.2 &#x914D;&#x7F6E;&#x8D44;&#x6E90;&#x548C;&#x73AF;&#x5883;</h4>
+<p>&#x7528;&#x4E8E;SaaS&#x63A5;&#x5165;&#x7684;&#x79C1;&#x6709;&#x5316;&#x914D;&#x7F6E;&#x3001;&#x7814;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x548C;&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;&#x8D44;&#x6E90;&#xFF08;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x5E73;&#x53F0;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x8BE5;&#x6B65;&#xFF09;&#x3002;</p>
+<h5 id="121-&#x914D;&#x7F6E;&#x7BA1;&#x7406;">1.2.1 &#x914D;&#x7F6E;&#x7BA1;&#x7406;</h5>
+<h6 id="1211-&#x90E8;&#x7F72;&#x914D;&#x7F6E;">1.2.1.1 &#x90E8;&#x7F72;&#x914D;&#x7F6E;</h6>
+<p>&#x5165;&#x53E3;&#x4E3A;&#xFF1A;<a href="https://minapp.mypaas.com.cn/resource/deployment-config/list" target="_blank">&#x914D;&#x7F6E;&#x7BA1;&#x7406;-&#x90E8;&#x7F72;&#x914D;&#x7F6E;</a>&#x3002;
+&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x90E8;&#x7F72;&#x548C;&#x7248;&#x672C;&#x76F8;&#x5173;&#x7684;&#x4EA7;&#x7269;&#xFF0C;&#x5178;&#x578B;&#x7684;&#x5185;&#x5BB9;&#x5982;&#xFF1A;&#x8FD0;&#x884C;&#x65F6;&#x5143;&#x6570;&#x636E;
+<a href="meta1.png" data-lightbox="57a88389-5034-4402-818e-63c3e57b6ec6" data-title="meta1"><img src="meta1.png" alt="meta1"></a>
+<a href="meta2.png" data-lightbox="f8b637d6-ce50-4ec8-b3f9-3003e7100747" data-title="meta2"><img src="meta2.png" alt="meta2"></a></p>
+<h6 id="1212-&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x914D;&#x7F6E;">1.2.1.2 &#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x914D;&#x7F6E;</h6>
+<p>&#x5165;&#x53E3;&#x4E3A;&#xFF1A;<a href="https://minapp.mypaas.com.cn/resource/deployment-file/list" target="_blank">&#x914D;&#x7F6E;&#x7BA1;&#x7406;-&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x914D;&#x7F6E;</a>&#x3002;
+&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x5B58;&#x50A8;&#x548C;&#x7248;&#x672C;&#x65E0;&#x5173;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5178;&#x578B;&#x7684;&#x5185;&#x5BB9;&#x5982;&#xFF1A;&#x56FE;&#x7247;
+<a href="doc-data1.png" data-lightbox="5b82816d-3027-4d41-ad65-408ed23ba149" data-title="doc-data1"><img src="doc-data1.png" alt="doc-data1"></a>
+<a href="doc-data2.png" data-lightbox="68ab7ed8-5f83-4b71-9c4c-41fc30aa20a0" data-title="doc-data2"><img src="doc-data2.png" alt="doc-data2"></a></p>
+<h5 id="123-&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;&#x5305;">1.2.3 &#x6CE8;&#x518C;&#x7EC4;&#x4EF6;&#x5305;</h5>
+<p>&#x7528;&#x4E8E;&#x6CE8;&#x518C;SaaS&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#xFF0C;&#x76EE;&#x524D;&#x63D0;&#x4F9B;&#x4EE5;&#x7EC4;&#x4EF6;&#x5305;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x6CE8;&#x518C;&#xFF08;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4E1A;&#x52A1;&#x7EC4;&#x4EF6;&#x6CE8;&#x518C;&#xFF0C;&#x53EF;&#x8DF3;&#x8FC7;&#x8BE5;&#x6B65;&#x9AA4;&#xFF09;&#x3002;
+&#x6CE8;&#x610F;&#xFF1A;&#x6CE8;&#x518C;&#x7EC4;&#x4EF6;&#x5305;&#x524D;&#x9700;&#x8981;&#x8054;&#x7CFB;&#x5C0F;&#x7A0B;&#x5E8F;PaaS&#x5E73;&#x53F0;&#xFF0C;&#x4EE5;&#x5F00;&#x901A;PaaS&#x5E73;&#x53F0;&#x5BF9;&#x8BE5;&#x7EC4;&#x4EF6;&#x4ED3;&#x5E93;&#x7684;&#x8BFB;&#x53D6;&#x6743;&#x9650;&#x3002;
+<a href="component1.png" data-lightbox="327fd759-88bc-4c2d-9a60-08fca601e8a1" data-title="component1"><img src="component1.png" alt="component1"></a>
+<a href="component2.png" data-lightbox="04785996-c28e-4b67-8e86-9cee33bb0635" data-title="component2"><img src="component2.png" alt="component2"></a></p>
+<h5 id="1231-&#x7F16;&#x8F91;&#x7EC4;&#x4EF6;&#x8BE6;&#x60C5;">1.2.3.1 &#x7F16;&#x8F91;&#x7EC4;&#x4EF6;&#x8BE6;&#x60C5;</h5>
+<p>&#x7EC4;&#x4EF6;&#x5305;&#x5185;&#x7684;&#x7EC4;&#x4EF6;&#x53EF;&#x8FDB;&#x884C;&#x7EC4;&#x4EF6;&#x8BE6;&#x60C5;&#x7684;&#x7F16;&#x8F91;&#xFF0C;&#x7528;&#x4E8E;&#x8BBE;&#x8BA1;&#x5668;&#x5185;&#x7684;&#x7EC4;&#x4EF6;&#x5C55;&#x793A;&#xFF1A;
+<a href="component3.png" data-lightbox="e07e4b39-9232-4bdf-9be5-dae6febbac45" data-title="component3"><img src="component3.png" alt="component3"></a>
+<a href="component4.png" data-lightbox="6cbb514c-ff68-45fb-ae28-c84702156bef" data-title="component4"><img src="component4.png" alt="component4"></a></p>
+<h4 id="13-&#x521B;&#x5EFA;&#x5E94;&#x7528;">1.3 &#x521B;&#x5EFA;&#x5E94;&#x7528;</h4>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x8FDB;&#x884C;&#x5E94;&#x7528;&#x7684;&#x521B;&#x5EFA;
+<a href="app-1.png" data-lightbox="65f84357-ac11-4f28-8e84-dcdc36490e64" data-title="app-1"><img src="app-1.png" alt="app-1"></a>
+<a href="app0.png" data-lightbox="eefcf676-f4ec-4ba2-ab24-037978e88906" data-title="app0"><img src="app0.png" alt="app0"></a></p>
+<h4 id="14-&#x5F15;&#x7528;&#x8D44;&#x6E90;&#x548C;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;">1.4 &#x5F15;&#x7528;&#x8D44;&#x6E90;&#x548C;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;</h4>
+<p>&#x521B;&#x5EFA;&#x5B8C;&#x5E94;&#x7528;&#xFF0C;&#x53EF;&#x8BBE;&#x7F6E;&#x5E94;&#x7528;&#x5F53;&#x524D;&#x7684;&#x4E1A;&#x52A1;&#x73AF;&#x5883;&#x548C;&#x5F15;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#x8D44;&#x6E90;&#xFF08;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x5E73;&#x53F0;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x8BE5;&#x6B65;&#xFF09;&#x3002;</p>
+<h5 id="141-&#x5F15;&#x7528;&#x7EC4;&#x4EF6;">1.4.1 &#x5F15;&#x7528;&#x7EC4;&#x4EF6;</h5>
+<p><a href="app1.png" data-lightbox="1af4d0be-1399-48fd-93cb-5b05da21611c" data-title="app1"><img src="app1.png" alt="app1"></a>
+<a href="app3.png" data-lightbox="6d900079-5db4-4659-a754-e2e5cb50d8bc" data-title="app3"><img src="app3.png" alt="app3"></a>
+<a href="component5.png" data-lightbox="97a65a83-6739-420b-b92d-67ca51c01234" data-title="component5"><img src="component5.png" alt="component5"></a>
+<a href="component6.png" data-lightbox="ac94e2b8-9792-4c60-acc3-56719f359ccb" data-title="component6"><img src="component6.png" alt="component6"></a></p>
+<h5 id="142-&#x521B;&#x5EFA;&#x7F16;&#x8F91;&#x4E1A;&#x52A1;&#x73AF;&#x5883;">1.4.2 &#x521B;&#x5EFA;/&#x7F16;&#x8F91;&#x4E1A;&#x52A1;&#x73AF;&#x5883;</h5>
+<p>1&#x3001; &#x4E1A;&#x52A1;&#x73AF;&#x5883;&#x5BF9;&#x5E94;SaaS&#x7814;&#x53D1;&#x6D41;&#x7A0B;&#xFF0C;&#x5982;SaaS&#x7CFB;&#x7EDF;&#x6709;&#x201C;&#x5F00;&#x53D1;&#x201D;-&gt;&#x201C;&#x6D4B;&#x8BD5;&#x201D;-&gt;&#x201C;&#x9884;&#x53D1;&#x5E03;&#x201D;-&gt;&#x201C;&#x751F;&#x4EA7;&#x201D;&#x51E0;&#x4E2A;&#x73AF;&#x5883;&#xFF0C;&#x5219;&#x53EF;&#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x4F9B;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x6240;&#x9700;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x3002;</p>
+<p>2&#x3001; &#x90E8;&#x7F72;&#x914D;&#x7F6E;&#x548C;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x914D;&#x7F6E;&#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x7684;&#x516C;&#x6709;&#x4E91;&#x914D;&#x7F6E;&#xFF0C;&#x6709;&#x79C1;&#x6709;&#x5316;&#x9700;&#x6C42;&#x5219;&#x8981;&#x63D0;&#x524D;&#x5728;&#x3010;&#x8D44;&#x6E90;&#x7BA1;&#x7406;-&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x3011;&#x4E2D;&#x8FDB;&#x884C;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;
+<a href="env1.png" data-lightbox="b9a02f5a-d183-463b-880b-dc7898d86f7c" data-title="env1"><img src="env1.png" alt="env1"></a>
+<a href="env2.png" data-lightbox="f53439d0-dc5b-4f71-a030-38c4fe92befe" data-title="env2"><img src="env2.png" alt="env2"></a></p>
+<h5 id="143-&#x8BBE;&#x7F6E;&#x4E1A;&#x52A1;&#x73AF;&#x5883;">1.4.3 &#x8BBE;&#x7F6E;&#x4E1A;&#x52A1;&#x73AF;&#x5883;</h5>
+<p><a href="app3.png" data-lightbox="0b77fcf6-500d-434e-b9fd-47a1eaa7755b" data-title="app3"><img src="app3.png" alt="app3"></a></p>
+<h4 id="15-&#x53D1;&#x5E03;&#x5E94;&#x7528;&#x7248;&#x672C;">1.5 &#x53D1;&#x5E03;&#x5E94;&#x7528;&#x7248;&#x672C;</h4>
+<p>1&#xFF09;&#x70B9;&#x51FB;&#x5E94;&#x7528;&#xFF0C;&#x8FDB;&#x5165;&#x5F00;&#x53D1;&#x8005;&#x8BBE;&#x8BA1;&#x5668;&#xFF0C;&#x53EF;&#x8FDB;&#x884C;&#x5E94;&#x7528;&#x7684;&#x53D1;&#x5E03;&#xFF08;&#x76EE;&#x524D;&#x5F00;&#x53D1;&#x8005;&#x8BBE;&#x8BA1;&#x5668;&#x8FD8;&#x5728;&#x5B8C;&#x5584;&#x4E2D;&#xFF0C;&#x4EC5;&#x63D0;&#x4F9B;&#x5E94;&#x7528;&#x53D1;&#x5E03;&#x529F;&#x80FD;&#xFF09;&#xFF1A;
+<a href="design1.png" data-lightbox="ad91cf24-2dc0-4b02-8f8a-8abeb6a46262" data-title="design1"><img src="design1.png" alt="design1"></a>
+2&#xFF09;&#x8FDB;&#x5165;&#x5F00;&#x53D1;&#x8005;&#x8BBE;&#x8BA1;&#x5668;
+<a href="design2.png" data-lightbox="cf423644-0ecf-45df-b44b-834ec5bf3da7" data-title="design2"><img src="design2.png" alt="design2"></a>
+3&#xFF09;&#x70B9;&#x51FB;&#x53D1;&#x5E03;&#xFF0C;&#x51FA;&#x73B0;&#x53D1;&#x5E03;&#x754C;&#x9762;&#xFF0C;&#x9700;&#x8981;&#x586B;&#x5165;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x7528;&#x4EE5;&#x65B0;&#x5EFA;&#x7248;&#x672C;
+<a href="design3.png" data-lightbox="d2ad1482-8085-4f2c-9dc9-2ee8c9f58546" data-title="design3"><img src="design3.png" alt="design3"></a>
+4&#xFF09;&#x70B9;&#x51FB;&#x201C;&#x65B0;&#x5EFA;&#x7248;&#x672C;&#x201D;&#xFF0C;&#x7B49;&#x5F85;&#x5B8C;&#x6210;&#xFF0C;&#x5373;&#x53EF;&#x70B9;&#x51FB;&#x8FDB;&#x884C;&#x53D1;&#x5E03;
+<a href="design5.png" data-lightbox="05f5ceb0-90c2-4909-ad8f-6121ee62b27d" data-title="design5"><img src="design5.png" alt="design5"></a>
+5&#xFF09;&#x53D1;&#x5E03;&#x6210;&#x529F;&#xFF0C;&#x70B9;&#x51FB;&#x786E;&#x8BA4;&#xFF0C;&#x53EF;&#x56DE;&#x5230;&#x8BBE;&#x8BA1;&#x5668;&#xFF1A;
+<a href="design6.png" data-lightbox="b25d618a-6b62-4262-aa4c-117d2fc9b852" data-title="design6"><img src="design6.png" alt="design6"></a>
+6&#xFF09;&#x8BBE;&#x8BA1;&#x5668;&#x5185;&#xFF0C;&#x70B9;&#x51FB;&#x201C;&#x9000;&#x51FA;&#x201D;&#xFF0C;&#x53EF;&#x56DE;&#x5230;&#x3010;&#x5E94;&#x7528;&#x7BA1;&#x7406;-&#x5DE5;&#x4F5C;&#x533A;&#x3011;
+<a href="design7.png" data-lightbox="721e84a4-efe8-4466-b80e-4137b326432c" data-title="design7"><img src="design7.png" alt="design7"></a>
+7&#xFF09;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x5B8C;&#x6210;&#x4E86;&#x5E94;&#x7528;&#x7248;&#x672C;&#x7684;&#x53D1;&#x5E03;&#xFF08;&#x6307;&#x5B9A;&#x73AF;&#x5883;&#xFF09;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x8BBE;&#x7F6E;&#x6210;&#x201C;&#x7EBF;&#x4E0A;&#x7248;&#x672C;&#x201D;&#xFF0C;SaaS&#x521B;&#x5EFA;&#x79DF;&#x6237;&#x5E94;&#x7528;&#x65F6;&#x5C06;&#x4EE5;&#x8BE5;&#x7248;&#x672C;&#x4E3A;&#x51C6;&#xFF1A;
+<a href="design8.png" data-lightbox="11392adb-cdea-494d-bdf9-5efd4c348160" data-title="design8"><img src="design8.png" alt="design8"></a></p>
+<h3 id="2-&#x5E73;&#x53F0;&#x5BF9;&#x63A5;">2 &#x5E73;&#x53F0;&#x5BF9;&#x63A5;</h3>
+<p>&#x5E73;&#x53F0;&#x5BF9;&#x63A5;&#x9700;&#x8981;&#x51C6;&#x5907;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5E8F;&#x53F7;</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x5185;&#x5BB9;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>&#x56E2;&#x961F;&#x79D8;&#x94A5;</td>
+<td>appId&#x3001;appSecret</td>
+<td>&#x5C0F;&#x7A0B;&#x5E8F;PaaS&#x5E73;&#x53F0;&#x81EA;&#x52A8;&#x751F;&#x6210;&#xFF0C;&#x7528;&#x4E8E;openApi&#x5BF9;&#x63A5;&#x9274;&#x6743;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>&#x5E94;&#x7528;&#x7F16;&#x7801;</td>
+<td>productAppCode</td>
+<td>&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x65F6;&#x586B;&#x5165;&#xFF0C;SaaS&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x5E94;&#x7528;&#x7F16;&#x7801;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&#x73AF;&#x5883;&#x7F16;&#x7801;</td>
+<td>envCode</td>
+<td>&#x521B;&#x5EFA;&#x4E1A;&#x52A1;&#x73AF;&#x5883;&#x65F6;&#x586B;&#x5165;&#xFF0C;&#x5F85;&#x5BF9;&#x63A5;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x73AF;&#x5883;&#x7F16;&#x7801;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>&#x79DF;&#x6237;&#x7F16;&#x7801;</td>
+<td>tenentCode</td>
+<td>SaaS&#x5E73;&#x53F0;&#x4F20;&#x5165;&#xFF0C;&#x79DF;&#x6237;&#x7F16;&#x7801;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>&#x79DF;&#x6237;&#x5E94;&#x7528;&#x7F16;&#x7801;</td>
+<td>tenantAppCode</td>
+<td>SaaS&#x5E73;&#x53F0;&#x4F20;&#x5165;&#xFF0C;&#x79DF;&#x6237;&#x5E94;&#x7528;&#x7F16;&#x7801;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="21-&#x83B7;&#x53D6;&#x56E2;&#x961F;&#x79D8;&#x94A5;">2.1 &#x83B7;&#x53D6;&#x56E2;&#x961F;&#x79D8;&#x94A5;</h4>
+<p>&#x5165;&#x53E3;&#xFF1A;<a href="https://minapp.mypaas.com.cn/team/secret" target="_blank">&#x56E2;&#x961F;&#x7BA1;&#x7406;-&#x56E2;&#x961F;&#x79D8;&#x94A5;</a>
+<a href="team.png" data-lightbox="baefb42c-e9c4-4b3c-8123-7dabad20a01f" data-title="team"><img src="team.png" alt="team"></a></p>
+<h4 id="22-&#x83B7;&#x53D6;&#x5E94;&#x7528;&#x7F16;&#x7801;">2.2 &#x83B7;&#x53D6;&#x5E94;&#x7528;&#x7F16;&#x7801;</h4>
+<p>&#x5165;&#x53E3;&#xFF1A;&#x5E94;&#x7528;&#x7BA1;&#x7406;-&#x5DE5;&#x4F5C;&#x533A;&#x7BA1;&#x7406;-&#x5E94;&#x7528;&#x914D;&#x7F6E;-&#x57FA;&#x672C;&#x4FE1;&#x606F;
+<a href="appcode.png" data-lightbox="6a7b3258-4848-43d2-ae98-f186d20aaeb6" data-title="appcode"><img src="appcode.png" alt="appcode"></a></p>
+<h4 id="23-&#x83B7;&#x53D6;&#x73AF;&#x5883;&#x7F16;&#x7801;">2.3 &#x83B7;&#x53D6;&#x73AF;&#x5883;&#x7F16;&#x7801;</h4>
+<p><a href="envcode0.png" data-lightbox="e5594c48-0c45-47a8-a84f-f5e0b84390b9" data-title="envcode0"><img src="envcode0.png" alt="envcode0"></a>
+<a href="envcode.png" data-lightbox="2e6f666b-ca9d-410f-a04b-6116293a48b7" data-title="envcode"><img src="envcode.png" alt="envcode"></a></p>
+<h4 id="24-&#x5BF9;&#x63A5;openapi">2.4 &#x5BF9;&#x63A5;openApi</h4>
+<h5 id="241-&#x63A5;&#x53E3;&#x6587;&#x6863;&#xFF1A;openapi&#x63A5;&#x53E3;&#x6587;&#x6863;">2.4.1 &#x63A5;&#x53E3;&#x6587;&#x6863;&#xFF1A;<a href="../&#x5E73;&#x53F0;&#x5E94;&#x7528;API/">openApi&#x63A5;&#x53E3;&#x6587;&#x6863;</a></h5>
+<h5 id="242-&#x5BF9;&#x63A5;&#x6D41;&#x7A0B;&#xFF08;ai&#x4E91;&#x5E97;&#xFF09;">2.4.2 &#x5BF9;&#x63A5;&#x6D41;&#x7A0B;&#xFF08;AI&#x4E91;&#x5E97;&#xFF09;</h5>
+<p> 1)&#x4E91;&#x5E97;&#x9002;&#x914D;&#x65B9;&#x6848;:<a href="https://shimo.im/docs/CwHXggrRxV9wXdxg/" target="_blank">&#x300A;&#x5BF9;&#x63A5;&#x5929;&#x9645;&#x5E73;&#x53F0;&#x5C0F;&#x7A0B;&#x5E8F;PaaS&#x300B;</a></p>
+<p> 2)&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x65B9;&#x6848;:<a href="&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x65B9;&#x6848;.png" data-lightbox="39ac0efe-9b1e-4e3d-9e97-8dd4e9922589" data-title="&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x65B9;&#x6848;"><img src="&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x65B9;&#x6848;.png" alt="&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x65B9;&#x6848;"></a></p>
+<h3 id="3-&#x540C;&#x6B65;&#x79DF;&#x6237;&#x6570;&#x636E;">3 &#x540C;&#x6B65;&#x79DF;&#x6237;&#x6570;&#x636E;</h3>
+<p>SaaS &#x5E73;&#x53F0;&#x8C03;&#x7528; openAPI &#x540C;&#x6B65;</p>
+<script>document.addEventListener("DOMContentLoaded", function() {lightbox.option({"resizeDuration":100,"wrapAround":true});})</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 接入指南（嵌入式方案）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="更新组件.html" class="navigation navigation-next " aria-label="Next page: 更新组件流程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"首次接入流程","level":"1.2.1","depth":2,"next":{"title":"更新组件流程","level":"1.2.2","depth":2,"path":"嵌入式方案/更新组件.md","ref":"嵌入式方案/更新组件.md","articles":[]},"previous":{"title":"接入指南（嵌入式方案）","level":"1.2","depth":1,"path":"嵌入式方案/README.md","ref":"嵌入式方案/README.md","articles":[{"title":"首次接入流程","level":"1.2.1","depth":2,"path":"嵌入式方案/接入流程.md","ref":"嵌入式方案/接入流程.md","articles":[]},{"title":"更新组件流程","level":"1.2.2","depth":2,"path":"嵌入式方案/更新组件.md","ref":"嵌入式方案/更新组件.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["fontsettings","lunr","search","sharing","highlight","livereload","intopic-toc","lightbox","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"本章目录","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"lightbox":{"jquery":true,"options":{"resizeDuration":100,"wrapAround":true},"sameUuid":false},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"wangcq01 <wangcq01@mingyuanyun.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"文档中心 | 小程序PaaS","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"小程序PaaS":"http://minapp.mypaas.com.cn"}},"gitbook":"*","description":"面向地产客户提供一站式低代码小程序搭建平台。","extension":null},"file":{"path":"嵌入式方案/接入流程.md","mtime":"2020-12-21T15:29:56.248Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-21T14:02:45.931Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+
+    </body>
+</html>
+
